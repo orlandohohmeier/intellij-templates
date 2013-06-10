@@ -1,10 +1,10 @@
-# IntelliJ File Templates
+# IntelliJ (WebStorm, PHPStorm, ...) File Templates
 
 ## Templates
 
 ### General
 
-General templates
+General javascript templates
 
 * AMD (JS) - A simple AMD (Asynchronous Module Definition) module template.
 * AMD Bootstrap (JS) - Application bootstrap template.
@@ -24,8 +24,8 @@ Some [AngularJS](http://angularjs.org/) AMD templates.
 * Angular (AMD) Service (JS) - Angular service template
 * Angular (AMD) Index (HTML) - Angular index template.
 
-## Intsalling Templates
+## Installation
 
-To install the Template follow the instruction described on the IntelliJ Web Help.
+To install the Templates, follow the instruction described on the IntelliJ Web Help.
 
 [http://www.jetbrains.com/idea/webhelp/creating-and-editing-file-templates.html#d407421e560](http://www.jetbrains.com/idea/webhelp/creating-and-editing-file-templates.html#d407421e560)
