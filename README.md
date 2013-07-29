@@ -19,6 +19,7 @@ Some [AngularJS](http://angularjs.org/) AMD templates.
 * Angular (AMD) Context (JS) - Application context template.
 * Angular (AMD) Controller (JS) - Simple angular controller template.
 * Angular (AMD) Directive (JS) - Angular directive template.
+* Angular (AMD) Directive controller (JS) - Angular directive controller template.
 * Angular (AMD) Model (JS) - Simple model template.
 * Angular (AMD) Filter (JS) - Simple model template.
 * Angular (AMD) Service (JS) - Angular service template
