@@ -1,5 +1,5 @@
 //
-// Angular (AMD) Context Intellij Template
+// Angular (AMD) Module Context Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
 define(function (require) {
@@ -7,6 +7,7 @@ define(function (require) {
 
     //#import
 
+    // Core
     var angular = require('angular');
 
     // Config
@@ -24,8 +25,6 @@ define(function (require) {
     // Controller
     var ControllerName = require('controller/controllername');
 
-
-
     //@implementation
 
     /**
@@ -39,11 +38,19 @@ define(function (require) {
     function ${Name}() {
 
         /**
+         * Module ID
+         *
+         * @type {string}
+         * @const
+         */
+        var ID = '${Name}';
+
+        /**
          * Instance
          *
          * @type {angular.module}
          */
-        var instance = angular.module(${Name}.ID, []);
+        var instance = angular.module(ID, []);
 
         /**
          * Init
@@ -67,14 +74,20 @@ define(function (require) {
 
         }
 
+        /**
+         * Get module id
+         *
+         * @returns {string}
+         */
+        instance.id = function id(){
+            return ID;
+        };
+
         //Call Init
         init();
 
         return instance;
     }
-
-    //ID
-    ${Name}.ID = '${Name}';
 
     //Export
     return ${Name};

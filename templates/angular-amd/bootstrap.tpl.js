@@ -24,8 +24,5 @@ requirejs.config({
 
 //Bootstrap Application
 require(['angular', 'context-name'], function (angular, Context) {
-    //Create new Context
-    var context = Context();
-    //Bootstrap App
-    angular.bootstrap(document, [Context.ID]);
+    angular.bootstrap(document, [Context().id()]);
 });
