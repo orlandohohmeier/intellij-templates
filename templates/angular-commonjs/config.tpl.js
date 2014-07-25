@@ -1,40 +1,37 @@
 //
-// Angular (AMD) Config Intellij Template
+// Angular (CommonJS) Config Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
-define(function (require) {
-    "use strict";
 
-    //#import
+//#import
 
-    //@implementation
+//@implementation
+
+/**
+ * ${Name}
+ *
+ * @name ${Name}
+ * @author ${USER}
+ *
+ * @constructor
+ */
+function ${Name}() {
 
     /**
-     * ${Name}
-     *
-     * @name ${Name}
-     * @author ${USER}
-     *
-     * @constructor
+     * Init
      */
-    function ${Name}(scope) {
+    function init() {
 
-        /**
-         * Init
-         */
-        function init() {
-
-        }
-
-        //Call Init
-        init();
     }
 
-    //Inject
-    ${Name}.\$inject = ['\$scope'];
+    //Call Init
+    init();
+}
 
-    //Export
-    return ${Name};
+//Inject
+${Name}.\$inject = [];
 
-    //@end
-});
+//@end
+
+//Export
+module.exports = ${Name};

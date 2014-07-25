@@ -1,96 +1,93 @@
 //
-// Angular (AMD) Module Context Intellij Template
+// Angular (CommonJS) Module Context Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
-define(function (require) {
-    "use strict";
 
-    //#import
+//#import
 
-    // Core
-    var angular = require('angular');
+// Core
+var angular = require('angular');
 
-    // Config
-    var ConfigName = require('configname');
+// Config
+var ConfigName = require('configname');
 
-    // Model
-    var ModelName = require('model/modelname');
+// Model
+var ModelName = require('model/modelname');
 
-    // Services
-    var ServiceName = require('services/servicename');
+// Services
+var ServiceName = require('services/servicename');
 
-    // Directive
-    var directiveName = require('directives/directivename');
+// Directive
+var directiveName = require('directives/directivename');
 
-    // Controller
-    var ControllerName = require('controller/controllername');
+// Controller
+var ControllerName = require('controller/controllername');
 
-    //@implementation
+//@implementation
+
+/**
+ * ${Name}
+ *
+ * @name ${Name}
+ * @author ${USER}
+ *
+ * @constructor
+ */
+function ${Name}() {
 
     /**
-     * ${Name}
+     * Module ID
      *
-     * @name ${Name}
-     * @author ${USER}
-     *
-     * @constructor
+     * @type {string}
+     * @const
      */
-    function ${Name}() {
+    var ID = '${Name}';
 
-        /**
-         * Module ID
-         *
-         * @type {string}
-         * @const
-         */
-        var ID = '${Name}';
+    /**
+     * Instance
+     *
+     * @type {angular.module}
+     */
+    var instance = angular.module(ID, []);
 
-        /**
-         * Instance
-         *
-         * @type {angular.module}
-         */
-        var instance = angular.module(ID, []);
+    /**
+     * Init
+     */
+    function init() {
 
-        /**
-         * Init
-         */
-        function init() {
+        // Set Config
+        instance.config(ConfigName);
 
-            // Set Config
-            instance.config(ConfigName);
+        // Map Model
+        instance.factory('ModelName', ModelName);
 
-            // Map Model
-            instance.factory('ModelName', ModelName);
+        // Map Services
+        instance.factory('ServiceName', ServiceName);
 
-            // Map Services
-            instance.factory('ServiceName', ServiceName);
+        // Map Directives
+        instance.directive('directiveName', directiveName);
 
-            // Map Directives
-            instance.directive('directiveName', directiveName);
+        // Map Controller
+        instance.controller('ControllerName', ControllerName);
 
-            // Map Controller
-            instance.controller('ControllerName', ControllerName);
-
-        }
-
-        /**
-         * Get module id
-         *
-         * @returns {string}
-         */
-        instance.id = function id(){
-            return ID;
-        };
-
-        //Call Init
-        init();
-
-        return instance;
     }
 
-    //Export
-    return ${Name};
+    /**
+     * Get module id
+     *
+     * @returns {string}
+     */
+    instance.id = function id(){
+        return ID;
+    };
 
-    //@end
-});
+    //Call Init
+    init();
+
+    return instance;
+}
+
+//@end
+
+//Export
+module.exports = ${Name};

@@ -1,49 +1,47 @@
 //
-// Angular (AMD) Service Intellij Template
+// Angular (CommonJS) Service Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
-define(function (require) {
-    "use strict";
 
-    //#import
+//#import
 
-    //@implementation
+//@implementation
+
+/**
+ * ${Name}
+ *
+ * @name ${Name}
+ * @author ${USER}
+ *
+ * @factory
+ */
+function ${Name}() {
 
     /**
-     * ${Name}
+     * Instance
      *
-     * @name ${Name}
-     * @author ${USER}
-     *
-     * @factory
+     * @type {object}
      */
-    function ${Name}(injectables) {
+    var instance = {};
 
-        /**
-         * Instance
-         *
-         * @type {object}
-         */
-        var instance = {};
+    /**
+     * Init
+     */
+    function init() {
 
-        /**
-         * Init
-         */
-        function init() {
-
-        }
-
-        //Call Init
-        init();
-
-        return instance;
     }
 
-    //Inject
-    ${Name}.\$inject = ['injectables'];
+    //Call Init
+    init();
 
-    //Export
-    return ${Name};
+    return instance;
+}
 
-    //@end
-});
+//Inject
+${Name}.\$inject = [];
+
+//@end
+
+
+//Export
+module.exports = ${Name};

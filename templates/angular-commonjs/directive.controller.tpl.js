@@ -1,40 +1,37 @@
 //
-// Angular (AMD) Controller Intellij Template
+// Angular (CommonJS) Controller Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
-define(function (require) {
-    "use strict";
 
-    //#import
+//#import
 
-    //@implementation
+//@implementation
 
-    /**
-     * ${Name}
-     *
-     * @name ${Name}
-     * @author ${USER}
-     *
-     * @constructor
-     */
-    function ${Name}(scope, element, attributes) {
+/**
+ * ${Name}
+ *
+ * @name ${Name}
+ * @author ${USER}
+ *
+ * @constructor
+ */
+function ${Name}(scope, element, attributes) {
 
-        /**
-         * Init
-         */
-        function init() {
+	/**
+	 * Init
+	 */
+	function init() {
 
-        }
+	}
 
-        //Call Init
-        init();
-    }
+	//Call Init
+	init();
+}
 
-    //Inject
-    ${Name}.\$inject = ['\$scope', '\$element', '\$attrs'];
+//Inject
+${Name}.\$inject = ['\$scope', '\$element', '\$attrs'];
 
-    //Export
-    return ${Name};
+//@end
 
-    //@end
-});
+//Export
+module.exports =  ${Name};

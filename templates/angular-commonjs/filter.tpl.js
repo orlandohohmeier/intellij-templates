@@ -1,42 +1,38 @@
 //
-// Angular (AMD) Filter Intellij Template
+// Angular (CommonJS) Filter Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
-define(function (require) {
-    "use strict";
 
-    //#import
+//#import
 
-    //@implementation
+//@implementation
+
+/**
+ * ${Name}
+ *
+ * @author ${USER}
+ *
+ * @factory
+ */
+function ${Name}() {
 
     /**
-     * ${Name}
+     * Filter
      *
-     * @author ${USER}
-     *
-     * @factory
+     * @param input {*}
+     * @returns {string}
      */
-    function ${Name}(injectables) {
+    var filter = function filter(input) {
+        return input;
+    };
 
-        /**
-         * Filter
-         *
-         * @param input {*}
-         * @returns {string}
-         */
-        var filter = function filter(input) {
-            var output = input;
-            return output;
-        };
+    return filter;
+}
 
-        return filter;
-    }
+//Inject
+${Name}.\$inject = [];
 
-    //Inject
-    ${Name}.\$inject = ['injectables'];
+//@end
 
-    //Export
-    return ${Name};
-
-    //@end
-});
+//Export
+module.exports = ${Name};
