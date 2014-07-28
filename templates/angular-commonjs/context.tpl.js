@@ -31,7 +31,7 @@ var ControllerName = require('controller/controllername');
  * @name ${Name}
  * @author ${USER}
  *
- * @constructor
+ * @returns angular.module
  */
 function ${Name}() {
 
