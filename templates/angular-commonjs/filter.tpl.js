@@ -3,6 +3,8 @@
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
 
+"use strict";
+
 //#import
 
 //@implementation
