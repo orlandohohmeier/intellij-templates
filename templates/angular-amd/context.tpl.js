@@ -33,7 +33,7 @@ define(function (require) {
      * @name ${Name}
      * @author ${USER}
      *
-     * @returns angular.module
+     * @return {angular.Module}
      */
     function ${Name}() {
 

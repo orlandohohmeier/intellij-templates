@@ -33,7 +33,7 @@ var ControllerName = require('controller/controllername');
  * @name ${Name}
  * @author ${USER}
  *
- * @returns angular.module
+ * @return {angular.Module}
  */
 function ${Name}() {
 
@@ -48,7 +48,7 @@ function ${Name}() {
     /**
      * Instance
      *
-     * @type {angular.module}
+     * @type {angular.Module}
      */
     var instance = angular.module(ID, []);
 
