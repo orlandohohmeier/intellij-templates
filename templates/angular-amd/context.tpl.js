@@ -48,7 +48,7 @@ define(function (require) {
         /**
          * Instance
          *
-         * @type {angular.module}
+         * @type {angular.Module}
          */
         var instance = angular.module(ID, []);
 
