@@ -45,5 +45,5 @@ ${Name}.\$inject = [];
 //@end
 
 //Export
-modules.exports = ${Name};
+module.exports = ${Name};
 
