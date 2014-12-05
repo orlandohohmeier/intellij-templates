@@ -1,5 +1,5 @@
 //
-// Angular (CommonJS) Controller Intellij Template
+// Angular (CommonJS) Directive Controller Intellij Template
 // @author Orlando Hohmeier (orlandohohmeier.com)
 //
 
