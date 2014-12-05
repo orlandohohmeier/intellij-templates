@@ -15,16 +15,21 @@
  * @name ${Name}
  * @author ${USER}
  *
- * @factory
+ * @constructor
  */
 function ${Name}() {
+
+    // Scope-safe constructor
+    if (!(this instanceof ${Name})) {
+        return new ${Name}();
+    }
 
     /**
      * Instance
      *
-     * @type {object}
+     * @type {${Name}}
      */
-    var instance = {};
+    var instance = this;
 
     /**
      * Init
