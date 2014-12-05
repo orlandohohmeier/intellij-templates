@@ -16,7 +16,7 @@ var ConfigName = require('configname');
 // Model
 var ModelName = require('model/modelname');
 
-// Services
+// Servicesinstantiation
 var ServiceName = require('services/servicename');
 
 // Directive
@@ -33,9 +33,9 @@ var ControllerName = require('controller/controllername');
  * @name ${Name}
  * @author ${USER}
  *
- * @return {angular.Module}
+ * @return {module}
  */
-function ${Name}() {
+ var ${Name} function () {
 
     /**
      * Module ID
@@ -48,9 +48,14 @@ function ${Name}() {
     /**
      * Instance
      *
-     * @type {angular.Module}
+     * @type {module}
      */
     var instance = angular.module(ID, []);
+
+    // Singleton constructor
+    ${Name} = function () {
+        return instance;
+    };
 
     /**
      * Init

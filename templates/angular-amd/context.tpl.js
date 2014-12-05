@@ -33,9 +33,9 @@ define(function (require) {
      * @name ${Name}
      * @author ${USER}
      *
-     * @return {angular.Module}
+     * @return {module}
      */
-    function ${Name}() {
+    var ${Name} = function () {
 
         /**
          * Module ID
@@ -48,9 +48,14 @@ define(function (require) {
         /**
          * Instance
          *
-         * @type {angular.Module}
+         * @type {module}
          */
         var instance = angular.module(ID, []);
+
+        // Singleton constructor
+        ${Name} = function () {
+            return instance;
+        };
 
         /**
          * Init
