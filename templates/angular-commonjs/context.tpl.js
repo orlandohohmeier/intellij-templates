@@ -35,7 +35,7 @@ var ControllerName = require('controller/controllername');
  *
  * @return {module}
  */
- var ${Name} function () {
+ var ${Name} = function () {
 
     /**
      * Module ID
