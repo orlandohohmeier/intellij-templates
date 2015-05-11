@@ -28,14 +28,14 @@ var ControllerName = require('controller/controllername');
 //@implementation
 
 /**
- * ${Name}
+ * ${Name}Context
  *
- * @name ${Name}
+ * @name ${Name}Context
  * @author ${USER}
  *
  * @return {module}
  */
- var ${Name} = function () {
+ var ${Name}Context = function () {
 
     /**
      * Module ID
@@ -43,7 +43,7 @@ var ControllerName = require('controller/controllername');
      * @type {string}
      * @const
      */
-    var ID = '${Name}';
+    var ID = '${Name}Context';
 
     /**
      * Instance
@@ -53,7 +53,7 @@ var ControllerName = require('controller/controllername');
     var instance = angular.module(ID, []);
 
     // Singleton constructor
-    ${Name} = function () {
+    ${Name}Context = function () {
         return instance;
     };
 
@@ -97,4 +97,4 @@ var ControllerName = require('controller/controllername');
 //@end
 
 //Export
-module.exports = ${Name};
+module.exports = ${Name}Context;
